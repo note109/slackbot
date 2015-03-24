@@ -4,7 +4,7 @@ module.exports = function (req, res, next) {
     text : 'Hello, ' + userName + '!'
   };
 
-  if (userName !== "slackbot") {
+  if (userName !== "tanishibot") {
     return res.status(200).json(botPayload);
   }
 }
